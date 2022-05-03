@@ -6,6 +6,7 @@ summary: バックアップメタデータを SnapCenter Plug-in for VMware vSph
 ---
 = 移行後
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

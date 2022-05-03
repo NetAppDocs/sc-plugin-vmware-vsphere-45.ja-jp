@@ -6,6 +6,7 @@ summary: SnapCenter Plug-in for VMware vSphere に移行する前に、すべて
 ---
 = 移行の前提条件
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

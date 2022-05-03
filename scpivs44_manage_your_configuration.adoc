@@ -6,6 +6,7 @@ summary: vCenter のクレデンシャル、仮想アプライアンスのクレ
 ---
 = 構成を管理します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

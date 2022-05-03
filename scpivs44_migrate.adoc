@@ -6,6 +6,7 @@ summary: SnapCenter の Windows PowerShell コマンドレットを使用して�
 ---
 = 移行オプションとサポートされるパス
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

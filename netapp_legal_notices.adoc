@@ -6,6 +6,7 @@ summary:
 ---
 = 法的通知
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

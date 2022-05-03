@@ -6,6 +6,7 @@ summary: Windows ベースの SnapCenter VMware プラグインを使用して�
 ---
 = Windows ベースの SnapCenter Plug-in for VMware vSphere から移行する
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

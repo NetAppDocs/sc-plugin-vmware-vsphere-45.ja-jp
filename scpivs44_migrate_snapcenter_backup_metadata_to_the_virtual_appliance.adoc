@@ -6,6 +6,7 @@ summary: SnapCenter Windows PowerShell コマンドレットを使用して、 S
 ---
 = Windows ベースの SnapCenter VMware バックアップメタデータを移行する
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

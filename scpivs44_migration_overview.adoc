@@ -6,6 +6,7 @@ summary: 移行コマンドでメタデータを移行できるのは、 SnapCen
 ---
 = データ移行の概要
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

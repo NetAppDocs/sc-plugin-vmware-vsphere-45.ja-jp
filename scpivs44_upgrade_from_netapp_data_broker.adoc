@@ -6,6 +6,7 @@ summary: SnapCenter Plug-in for VMware vSphere の新機能を使用する場合
 ---
 = NetApp のデータブローカーからのアップグレード
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
