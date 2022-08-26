@@ -42,7 +42,7 @@ C ： \ProgramData\VMware\vCenterServer\cfg\vsphere-client\vc-packages\vsphere-c
 
 
 
-=== キャッシュをクリアする前にすでにアップグレードしている場合は回避策
+== キャッシュをクリアする前にすでにアップグレードしている場合は回避策
 
 . SnapCenter VMware プラグインの管理 GUI にログインします。
 +
