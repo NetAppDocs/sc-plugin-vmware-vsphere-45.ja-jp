@@ -22,6 +22,7 @@ SnapCenter Plug-in for VMware vSphere の新機能を使用する場合は、 Ne
 * アップグレード前に、 NetApp Data Broker を含む VM をバックアップすることを推奨します。
 
 
+.このタスクについて
 アップグレードの基本的な手順は 3 つあります。
 
 . アップグレードを準備
@@ -89,6 +90,7 @@ Datastores カラムで '.iso ファイルをアップロードしたデータ�
 
 
 
+.完了後
 「 upgrade successful 」というメッセージが表示されると、システムはサービスの開始を試みます。
 
 . 「 Press Enter to continue 」というメッセージが表示されるまで待ち、 SnapCenter Plug-in for VMware vSphere 管理 GUI にログインします。

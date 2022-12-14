@@ -22,6 +22,7 @@ vCenter のクレデンシャル、仮想アプライアンスのクレデンシ
 
 SnapCenter Plug-in for VMware vSphere リソースグループのバックアップスケジュールを設定すると、 SnapCenter VMware プラグインが導入されているタイムゾーンに対してスケジュールが自動的に設定されます。このタイムゾーンは、 SnapCenter Plug-in for VMware vSphere の管理 GUI を使用して変更できます。
 
+.作業を開始する前に
 SnapCenter Plug-in for VMware vSphere の管理 GUI の IP アドレスとログインクレデンシャルを確認しておく必要があります。
 
 * SnapCenter VMware プラグインを導入したときに表示された IP アドレスです。
@@ -50,6 +51,7 @@ image:scpivs44_image28.jpg["エラー：グラフィックイメージがあり�
 
 SnapCenter Plug-in for VMware vSphere の管理 GUI でログオンクレデンシャルを変更できます。
 
+.作業を開始する前に
 SnapCenter Plug-in for VMware vSphere の管理 GUI の IP アドレスとログオンクレデンシャルを確認しておく必要があります。
 
 * SnapCenter VMware プラグインを導入したときに表示された IP アドレスです。
@@ -78,6 +80,7 @@ image:scpivs44_image28.jpg["エラー：グラフィックイメージがあり�
 
 SnapCenter Plug-in for VMware vSphere で設定されている vCenter ログオンクレデンシャルを変更できます。これらの設定は、プラグインが vCenter にアクセスするために使用します。
 
+.作業を開始する前に
 SnapCenter Plug-in for VMware vSphere の管理 GUI の IP アドレスとログオンクレデンシャルを確認しておく必要があります。
 
 * SnapCenter VMware プラグインを導入したときに表示された IP アドレスです。
@@ -106,6 +109,7 @@ image:scpivs44_image30.png["エラー：グラフィックイメージがあり�
 
 SnapCenter Plug-in for VMware vSphere で設定されているネットワーク設定を変更することができます。これらの設定は、プラグインが vCenter にアクセスするために使用します。
 
+.作業を開始する前に
 SnapCenter Plug-in for VMware vSphere の管理 GUI の IP アドレスとログオンクレデンシャルを確認しておく必要があります。
 
 * SnapCenter VMware プラグインを導入したときに表示された IP アドレスです。

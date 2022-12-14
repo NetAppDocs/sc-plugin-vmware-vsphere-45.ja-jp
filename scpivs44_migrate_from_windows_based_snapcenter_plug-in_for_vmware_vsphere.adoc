@@ -22,6 +22,7 @@ Windows ベースの SnapCenter VMware プラグインを使用していて、 S
 * SnapCenter サーバがアップグレードされていることを確認します。を参照してください link:scpivs44_release_notes.html["『 SnapCenter Plug-in for VMware vSphere リリースノート』"^] サポートされているアップグレードパスの詳細については、を参照
 
 
+.このタスクについて
 基本的な手順は 4 つあります。
 
 . SnapCenter Plug-in for VMware vSphere の .ova ファイルをダウンロードします。
