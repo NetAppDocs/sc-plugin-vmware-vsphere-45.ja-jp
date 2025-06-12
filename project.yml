@@ -249,4 +249,4 @@ sidebar:
     - title: 認証エラーを管理します
       url: "/scpivs44_manage_authentication_errors.html"
   - title: 法的通知
-    url: "/netapp_legal_notices.html"
+    url: "/legal-notices.html"
