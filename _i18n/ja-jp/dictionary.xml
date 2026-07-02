@@ -138,8 +138,6 @@
   <block id="525ce06d03fa80ad6cae17313fa2c200" category="cell">`/4.1/resource-groups/{resouceGroupId}`</block>
   <block id="5fe166e4135764c88a9a4a5e8123d9a7" category="cell">「リソースグループを更新」は、指定したリソースグループを変更します。手順 1 から * resourceGroupId * を渡します。必要に応じて、手順 2 の * policyId * を渡し、その他すべての必須属性に加えて * frequency * の詳細を入力します。</block>
   <block id="023f24f55850eacb351f762db9b50e81" category="doc">データ移行の概要</block>
-  <block id="8a4139ea0786f41cc68aee2d93ca450a" category="paragraph">移行コマンドは、 #SnapCenter 4.0 以降の # からメタデータを移行します。以前のバージョンの SnapCenter を使用している場合は、移行前にアップグレードする必要があります。</block>
-  <block id="ec3d3431008e42a4c37055a78db7f12e" category="list-text">移行の内容には、が含まれ</block>
   <block id="2feaeb2408c183d076a33a4219e1d2f9" category="list-text">移行の内容</block>
   <block id="6e47f67257a96da0e60439107f9313d8" category="paragraph">SnapCenter メタデータ。ストレージシステム、カスタマイズされたスロットル、 SnapCenter 構成ファイルの E メール設定、ポリシー、リソースグループ、バックアップメタデータ、およびマウントが含まれます。（プリスクリプトまたはポストスクリプトが検出されると移行が失敗する）</block>
   <block id="f157845fa7e2cb440b9720fee982320f" category="list-text">何が移行されないか</block>
@@ -149,7 +147,6 @@
   <block id="2f0eb194a8b49da961163bd88957db1d" category="paragraph">'cbr.override' 設定ファイル</block>
   <block id="9f169b49f330730947d222bbed5ea9d5" category="list-text">SnapCenter ホストが一時停止されている</block>
   <block id="f9e772034bf2ad727413af11c17ae321" category="paragraph">移行が確実に成功するために、移行コマンドは SnapCenter に登録されているすべてのホストを一時停止します。移行プロセスが正常に完了すると、 SnapCenter ホストが再開されます。</block>
-  <block id="076b638a7f6c60dc2af3157c7af35158" category="list-text">移行コマンドレットのプロセス</block>
   <block id="5791662733ea82fadcf51018f5a713cc" category="paragraph">SnapCenter に登録されている SnapCenter プラグインの各インスタンスには、 Windows PowerShell コマンドレット「 Invoke-NaSCVOVAMigration 」を使用する必要があります。</block>
   <block id="e58c39b63288d59ff9b1d3a32f24ba44" category="paragraph">このコマンドレットでは次の処理が実行されます</block>
   <block id="ddfa006f0c7097e6fe9a320155501b2f" category="list-text">移行中にジョブが失敗しないように、すべてのスケジュールを一時停止します。移行が成功すると、スケジュールは自動的に再度有効になります。</block>
@@ -159,7 +156,6 @@
   <block id="8ad1e62298fe84f2103d5d68c12376c5" category="paragraph">SnapCenter VMware プラグインが SnapCenter サーバホストにインストールされていて、 SnapCenter リポジトリ用に保護が設定されている場合は、移行プロセスによって、 SnapCenter Plug-in for VMware vSphere および SnapCenter Plug-in for Windows を含む Windows ベースのプラグインパッケージもアンインストールされます。 次に、リポジトリの保護をサポートするために、最新バージョンの SnapCenter Plug-in for Windows を再インストールします。SnapCenter GUI のホストタイプが「 vSphere 」から「 Windows 」に変わります。</block>
   <block id="f45c0c9d4c9330950129ecfca4d67849" category="list-text">Windows SnapCenter サーバから vSphere ホストとリソースグループを削除します。</block>
   <block id="63d4733b87f2ebada3ddc1c38c9e2096" category="list-text">Linux ベースの SnapCenter VMware プラグインのバックアップジョブをアクティブ化します。</block>
-  <block id="4da72ab114de409c72a5b91f5ad57eac" category="list-text">仮想化されたデータベースおよびファイル・システム（ VMDK バックアップを介したアプリケーション・ベースのバックアップ）をサポートするために、 SnapCenter VMware プラグイン用の vSphere ホストを SnapCenter に登録します。</block>
   <block id="eb35c37e8caa9a670b1dc9d5b748f81d" category="list-text">メタデータの保存場所</block>
   <block id="225482ffbb975fa40a03adf122327c07" category="paragraph">アプリケーションベースの VMDK バックアップのメタデータは、 SnapCenter サーバリポジトリに格納されます。VM およびデータストアのバックアップのメタデータは、 SnapCenter VMware プラグインの MySQL リポジトリに格納されます。</block>
   <block id="713dad9a76a802a2762c4f4bf98a7a05" category="summary">SnapCenter Plug-in for VMware vSphere REST API を使用して VMDK の接続処理と接続解除処理を実行するには、規定された順序の REST API 呼び出しに従う必要があります。</block>
@@ -618,7 +614,6 @@
   <block id="5990783a93858d845e12e401808f16f3" category="list-text">セカンダリストレージ（ mirror-vault ）の Snapshot コピーの数が上限に達すると、バックアップ処理でバックアップを登録して保持を適用するアクティビティが次のエラーで失敗します。「 This Snapshot copy is currently used as a reference Snapshot copy by one or more SnapMirror relationship.Snapshot コピーを削除すると、原因の以降の SnapMirror 処理が失敗することがあります</block>
   <block id="7cb7ec638ee3f628b5dd7b29b735054f" category="paragraph">この問題を修正するには、 Snapshot コピーの上限に達しないように、セカンダリストレージの SnapMirror 保持ポリシーを設定します。</block>
   <block id="585f74b2337dcf50d5f84248087dbc7a" category="inline-link">ロールベースアクセス制御の使用に関する SnapCenter 情報</block>
-  <block id="339d9a9c6148bb34e3d15a00f296465c" category="paragraph">管理者によるユーザへのリソースの割り当て方法については、を参照してください<block ref="3c6a9a14d0d13aed475a45101fc3cc00" category="inline-link-rx"></block>。</block>
   <block id="600a5d9204570f4fa6ca6b92c38201a2" category="list-text">VM 整合性バックアップを作成する場合は、 VMware Tools をインストールして実行しておく必要があります。VM を休止するには VMware Tools が必要です。</block>
   <block id="567ee5fafb197286f35c17cbadbca640" category="paragraph">ウィザードの各ページのフィールドのほとんどはわかりやすいもので、説明を必要としません。以下の手順では、説明が必要な一部のフィールドを取り上げます。</block>
   <block id="406017c1f63a5ea525013c02ee27c794" category="list-text">VMware vSphere Web Client の左側のナビゲーションペインで、 * Policies * をクリックします。</block>
@@ -786,7 +781,6 @@
   <block id="89321ccbd89a9e660bc76b0f2974632d" category="summary">SnapCenter VMware プラグインは、 SSL 暗号化を使用してクライアントブラウザとのセキュアな通信を確立します。これにより、ネットワーク全体で暗号化されたデータを使用できるようになりますが、新しい自己署名証明書を作成するか、独自の認証局（ CA ）インフラストラクチャまたはサードパーティの CA を使用して、証明書が環境に固有のものであることが保証されます。</block>
   <block id="8fbcd736aac5b9c6baba8f4db349f50e" category="doc">証明書を作成してインポートします</block>
   <block id="9668b00eae1748d51afb7f725a15301a" category="inline-link">技術情報アーティクル：「 How to create or import an SSL certificate to SnapCenter Plug-in for VMware vSphere</block>
-  <block id="ba9184cb661fa8aa1f1e6f33c3d4f7b2" category="paragraph">を参照してください<block ref="bf84a7958c466b4ea912f7e396459ac9" category="inline-link-rx"></block>。</block>
   <block id="015b635404a717ebcfa72500098a5d70" category="summary">SnapCenter Plug-in for VMware vSphere 仮想アプライアンスを使用している場合は、新しいリリースにアップグレードできます。</block>
   <block id="331b48aba7178950c3dc14c31a21f9c0" category="doc">以前のリリースの SnapCenter Plug-in for VMware vSphere からアップグレードする</block>
   <block id="2d611cef8c845765881d408c7f4ca34d" category="paragraph">を参照してください <block ref="7b21f43f6f2c3f2cfd7e9a930ea43d44" category="inline-link-macro-rx"></block> サポートされているアップグレードパスの詳細については、を参照</block>
@@ -1930,7 +1924,6 @@
   <block id="db2e1add63786a85a052ed22230695ba" category="paragraph">Linux ベースの SnapCenter VMware プラグインを新規にインストールするため、 OVA の導入手順に従います。</block>
   <block id="dcf7adf9c4359cc6e6dd9e4730ada614" category="paragraph"><block ref="dcf7adf9c4359cc6e6dd9e4730ada614" category="inline-link-macro-rx"></block></block>
   <block id="8d9c5cc14a4e4caa925cbd7a13131b96" category="paragraph"><block ref="8d9c5cc14a4e4caa925cbd7a13131b96" category="inline-link-macro-rx"></block></block>
-  <block id="5ab39eb962f4ca6c2fa2841599dc4b73" category="paragraph"><block ref="5ab39eb962f4ca6c2fa2841599dc4b73" category="inline-link-macro-rx"></block></block>
   <block id="0460583622f03a52d7693094d6fa2452" category="sidebar">概念</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">はじめに</block>
   <block id="8b1375f200206162c06fc46aeb476858" category="sidebar">SCV の導入要件</block>
@@ -1980,4 +1973,7 @@
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="4ddfe5345c1893eaed7f3552ae181f2a" category="paragraph"><block ref="3cc65228ae073aa630520717edc687a9" category="inline-link-rx"></block>を参照してください。</block>
+  <block id="9c6e71898eae8897a7d429e3065e5a68" category="paragraph">管理者がユーザーにリソースを割り当てる方法については、<block ref="d818f211a7449f29082596280ad483fa" category="inline-link-rx"></block>を参照してください。</block>
+  <block id="a621a06ff9228f52f24b83c3da378df2" category="paragraph"><block ref="a621a06ff9228f52f24b83c3da378df2" category="inline-link-macro-rx"></block></block>
 </blocks>
