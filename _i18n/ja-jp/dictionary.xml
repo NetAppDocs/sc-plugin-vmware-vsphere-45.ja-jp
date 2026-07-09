@@ -181,7 +181,6 @@
   <block id="25d5b23dfd2418ca2f7bd81c33cc1638" category="paragraph">新規の SnapCenter ユーザの場合は、データ保護処理を実行する前に、 SnapCenter に Storage VM を追加する必要があります。Storage VM を追加するときは、管理 LIF を指定します。クラスタを追加し、クラスタ管理 LIF を指定することもできます。ストレージの追加については、を参照してください <block ref="a83c5384e42700c13fcc0778429c0b28" category="inline-link-macro-rx"></block>。</block>
   <block id="c46744bb8e6daa4db071ea447075214c" category="list-text">既存の SnapCenter ユーザ</block>
   <block id="7fb0755110f4a96ae5bd0935a2d5ccbb" category="inline-link-macro">移行オプション</block>
-  <block id="66e11d3669530781548c44d0e985fd1f" category="paragraph">既存の SnapCenter を使用している場合は、既存の SnapCenter VM とデータストアのバックアップとメタデータを移行する必要があります。移行の詳細については、を参照してください <block ref="fb8941fcb20ab31bfb546ae55256953e" category="inline-link-macro-rx"></block>。</block>
   <block id="40e6eca2154c52c78e678989d72d7903" category="section-title">発生する可能性がある導入の問題</block>
   <block id="b4f66c551198bcae0c148df6464649d2" category="list-text">仮想アプライアンスの導入後、ダッシュボードの * Backup Jobs * タブに次のような状況でロードされないことがあります。</block>
   <block id="01247ceba6ba6adacf0cb970001c3199" category="list-text">IPv4 を実行していて、 SnapCenter VMware vSphere ホスト用の IP アドレスが 2 つある。その結果、ジョブ要求は SnapCenter サーバで認識されない IP アドレスに送信されます。この問題を無効にするには、次のように、使用する IP アドレスを追加します。</block>
@@ -1976,4 +1975,5 @@
   <block id="4ddfe5345c1893eaed7f3552ae181f2a" category="paragraph"><block ref="3cc65228ae073aa630520717edc687a9" category="inline-link-rx"></block>を参照してください。</block>
   <block id="9c6e71898eae8897a7d429e3065e5a68" category="paragraph">管理者がユーザーにリソースを割り当てる方法については、<block ref="d818f211a7449f29082596280ad483fa" category="inline-link-rx"></block>を参照してください。</block>
   <block id="a621a06ff9228f52f24b83c3da378df2" category="paragraph"><block ref="a621a06ff9228f52f24b83c3da378df2" category="inline-link-macro-rx"></block></block>
+  <block id="be265de7e1b393ce9975fd92b202571f" category="paragraph">既存のSnapCenterユーザーは、既存のSnapCenter VMおよびデータストアのバックアップとメタデータを移行する必要があります。移行については、<block ref="78a42a003571fc69eadd314a84045e01" category="inline-link-macro-rx"></block>を参照してください。</block>
 </blocks>
